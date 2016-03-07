@@ -1,0 +1,65 @@
+<html ng-app="appMain">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" href="./css/bootstrap/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="./css/customstyles.css" />
+
+	<title> Lockan.Net 2016 </title>
+</head>
+
+<header class="page-header">
+	<div class="container">
+		<h1> Lockan.Net 2016</h1>
+	</div>
+</header>
+	
+<body ng-controller="mainController">
+	<div class="container">
+		<div class="page-header">
+			<h1>{{pageheader}}
+		</div>
+	</div>
+
+	<div id="mainContainer" class="container">
+		<div id="testbox" class="panel panel-group">
+			<div class="panel panel-default">
+				<div class="panel-heading" data-toggle="collapse" data-parent="#testbox" data-target="#testcontent">
+					<h4 class="panel-title accordion-toggle">{{title}}</h4>
+				</div>
+				<div id="testcontent" class="panel-collapse">
+					<div class="panel-body">
+						<div class="media">
+						  <div class="media-left">
+							<a href="#">
+							  <img class="media-object" src="..." alt="...">
+							</a>
+						  </div>
+						  <div class="media-body">
+							<h4 class="media-heading">{{subtitle}}</h4>
+							<p>{{description}}
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<footer class="footer">
+	<div class="container">
+		<p class="text-muted">
+			Site design &copy; 2016 A. Lockhart. Powered by Bootstrap &amp;&amp; Angular.js
+		</p>
+	</div>
+</footer>
+
+<script type="text/javascript" src="./js/jquery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="./js/angular/angular.js"></script>	
+<script type="text/javascript" src="./js/appMain.js"></script>
+
+</html>
