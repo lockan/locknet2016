@@ -1,8 +1,34 @@
-var appMain = angular.module("appMain", ['ngSanitize']);
+var appMain = angular.module("appMain", ['ngSanitize', 'ngRoute']);
 
-appMain.controller("mainController", function ($scope, $http, $sce) {
+//ROUTER
+appMain.config(function($routeProvider, $locationProvider) {
+	$routeProvider
 
-	$scope.pageheader = "Page Header";
+	// route for the home page
+	.when('/', {
+		templateUrl : 'main.html',
+		controller  : 'mainController'
+	})
+
+	// route for the about page
+	.when('/resume', {
+		templateUrl : 'resume.html',
+		controller  : 'resumeController'
+	})
+
+	// route for the contact page
+	.when('/code', {
+		templateUrl : 'code.html',
+		controller  : 'codeController'
+	});
+	
+	$locationProvider.html5Mode(true);
+});
+
+// MAIN CONTROLLER
+appMain.controller('mainController', function ($scope, $http, $sce) {
+
+	$scope.pageheader = "Main";
 	$scope.test = "This is a test";
 	$scope.title = "Sample title";
 	$scope.subtitle = "Subtitle";
@@ -18,4 +44,14 @@ appMain.controller("mainController", function ($scope, $http, $sce) {
 		return $sce.trustAsHtml(testdata);
 	};
 	
+});
+
+// RESUME CONTROLLER
+appMain.controller('resumeController', function ($scope) {
+	$scope.pageheader = "Resume"
+});
+
+// CODE CONTROLLER
+appMain.controller('codeController', function ($scope) {
+	$scope.pageheader = "Code"
 });

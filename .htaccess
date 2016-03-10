@@ -1,0 +1,9 @@
+RewriteEngine On 
+Options FollowSymLinks
+
+RewriteBase /
+
+#Rewrite rule to redirect Angular /#/url to /url
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /#/$1 [L]

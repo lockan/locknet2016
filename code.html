@@ -1,0 +1,26 @@
+<div>
+	<h1>{{pageheader}}</h1>
+</div>
+
+<div id="testbox" class="panel panel-group">
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-parent="#testbox" data-target="#testcontent">
+			<h4 class="panel-title accordion-toggle">{{title}}</h4>
+		</div>
+		<div id="testcontent" class="panel-collapse">
+			<div class="panel-body">
+				<div class="media">
+				  <div class="media-left">
+					  <img class="media-object" src="img/preview_pocketdialer.jpg" alt="...">
+				  </div>
+				  <div class="media-body">
+					<h4 class="media-heading">{{subtitle}}</h4>
+					<p>{{description}}
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div ng-bind-html="renderbox()"></div>
