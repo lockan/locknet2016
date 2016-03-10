@@ -26,13 +26,24 @@ appMain.config(function($routeProvider, $locationProvider) {
 });
 
 // MAIN CONTROLLER
-appMain.controller('mainController', function ($scope, $http, $sce) {
+appMain.controller('mainController', function ($scope, $http) {
 
 	$scope.pageheader = "Main";
 	$scope.test = "This is a test";
 	$scope.title = "Sample title";
 	$scope.subtitle = "Subtitle";
 	$scope.description = "This is some content text that I wrote";
+	
+});
+
+// RESUME CONTROLLER
+appMain.controller('resumeController', function ($scope) {
+	$scope.pageheader = "Resume"
+});
+
+// CODE CONTROLLER
+appMain.controller('codeController', function ($scope, $http, $sce) {
+	$scope.pageheader = "Code"
 	
 	var testdata 
 	$http.get('/htmltest.html').then(function(response) { 
@@ -43,15 +54,4 @@ appMain.controller('mainController', function ($scope, $http, $sce) {
 	$scope.renderbox = function() { 
 		return $sce.trustAsHtml(testdata);
 	};
-	
-});
-
-// RESUME CONTROLLER
-appMain.controller('resumeController', function ($scope) {
-	$scope.pageheader = "Resume"
-});
-
-// CODE CONTROLLER
-appMain.controller('codeController', function ($scope) {
-	$scope.pageheader = "Code"
 });
