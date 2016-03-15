@@ -1,6 +1,43 @@
+body {
+	background:					url('../img/typinghands.jpg') no-repeat center center;
+	min-height:					100%;
+	-webkit-background-size: 	cover;
+	-moz-background-size: 		cover;
+	background-size:			cover;
+}
+
+#mainheader {
+	margin-top: 		0px 				!important;
+	display:			block;
+	position:			relative;
+	background-color:	#000;
+	color:				#eee;
+}
+
+#siteheading {
+	position: 			relative;
+	display:			inline-block;
+}
+
+#linkbox {
+	position:			relative;			
+	float: 				right;
+	display:			inline-block;
+}
+
+#navmain {
+	
+}
+
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 40px;
+	color:	#eee;
+}
+
+#main {
+	display:			block;
+	position:			relative;
 }

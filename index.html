@@ -3,8 +3,8 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
-	<link rel="stylesheet" href="./css/bootstrap/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css" />
 	<link rel="stylesheet" href="./css/customstyles.css" />
 
 	<title> Lockan.Net 2016 </title>
@@ -13,16 +13,33 @@
 	
 <body>
 	<!-- Main Site Header -->
-	<header class="page-header">
-		<div class="container">	
-			<h1 class="text-center"> LockNet 2016 </h1>
-		</div>
-		<a href="/"> Home </a><a href="/code"> Code </a> <a href="/resume"> Resume </a>
+	<header id="mainheader" class="page-header">
+		
+			<div id="siteheading">	
+				<h1 class="text-left"> Andrew Lockhart </h1>
+			</div>
+			
+			<div id="linkbox">
+				<h1 class="btn-group" role="group">
+				<a href="http://www.github.com/lockan/" role="button" class="btn btn-primary">GitHub</a>
+				<a href="http://ca.linkedin.com/in/lockan/" role="button" class="btn btn-primary">LinkedIn</a>
+				<a href="#" role="button" class="btn btn-primary">E-mail</a>
+				</h1>
+			</div>		
+			
+			<nav id="navmain" class="nav navbar-nav navbar-inverse" role="navigation">
+				<ul class="nav nav-justified">
+					<li><a href="/"> GoHome() </a></li>
+					<li><a href="/code"> SampleCode() </a></li>
+					<li><a href="/resume"> ShowResume() </a></li>
+				</ul>
+			</nav>
+		
 	</header>
 	
 	<!-- Main Content Pane -->
 	<div id="main">
-		<div class="container">
+		<div class="container-fluid">
 			<div ng-view></div>
 		</div>
 	</div>
@@ -39,7 +56,7 @@
 </body>
 
 <script type="text/javascript" src="./js/jquery/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="./js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="./js/angular/angular.js"></script>
 <script type="text/javascript" src="./js/angular/angular-sanitize.js"></script>
 <script type="text/javascript" src="./js/angular/angular-route.js"></script>

@@ -4,19 +4,19 @@ var appMain = angular.module("appMain", ['ngSanitize', 'ngRoute']);
 appMain.config(function($routeProvider, $locationProvider) {
 	$routeProvider
 
-	// route for the home page
+	// index
 	.when('/', {
 		templateUrl : 'main.html',
 		controller  : 'mainController'
 	})
 
-	// route for the about page
+	// resume
 	.when('/resume', {
 		templateUrl : 'resume.html',
 		controller  : 'resumeController'
 	})
 
-	// route for the contact page
+	// code
 	.when('/code', {
 		templateUrl : 'code.html',
 		controller  : 'codeController'
