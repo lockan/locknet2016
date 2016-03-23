@@ -44,14 +44,22 @@ appMain.controller('resumeController', function ($scope) {
 // CODE CONTROLLER
 appMain.controller('codeController', function ($scope, $http, $sce) {
 	$scope.pageheader = "Code"
+	$scope.samples = [];
+		
+	var samplebox;
+	var sampledata = null;
 	
-	var testdata 
-	$http.get('/htmltest.html').then(function(response) { 
-		testdata = response.data;
+	$http.get('/codesamples/template_codesample.html').then(function(response) { 
+		samplebox = response.data;	
+	});
+
+	$http.get('/codesamples/codesampledata.json').then(function(response) { 
+		$scope.samples = response.data;
 	});
 	
-	
-	$scope.renderbox = function() { 
-		return $sce.trustAsHtml(testdata);
+	$scope.renderbox = function(sample) { 
+		//return $sce.trustAsHtml(samplebox);
+		return '/codesamples/template_codesample.html';
 	};
+	
 });

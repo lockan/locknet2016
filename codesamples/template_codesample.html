@@ -1,0 +1,20 @@
+<div id="codesamplebox_{{sample.id}}" class="panel panel-group">
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-parent="#codesamplebox_{{sample.id}}" data-target="#codesamplecontent_{{sample.id}}">
+			<h4 class="panel-title accordion-toggle">{{sample.title}}</h4>
+		</div>
+		<div id="codesamplecontent_{{sample.id}}" class="panel-collapse">
+			<div class="panel-body">
+				<div class="media">
+				  <div class="media-left">
+					  <img class="media-object" ng-src="/img/{{sample.img}}" alt="testAltText" />
+				  </div>
+				  <div class="media-body">
+					<h4 class="media-heading">{{sample.subtitle}}</h4>
+					<p>{{sample.description}}
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
