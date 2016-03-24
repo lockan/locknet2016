@@ -1,34 +1,34 @@
-[
+[	
 	{
-		"id": "id1",
-		"title": "Test title 1",
-		"subtitle": "Test subtitle 1",
-		"description": "Test content 1 test content 1 test content 1 test content 1.", 
-		"img": "preview_pocketdialer.jpg", 
-		"alttext": "alternate text 1"
+		"id": "id3",
+		"title": "Playlist Generator - C / C++",
+		"description": "PLS Generator is a playlist generator for the .PLS format, written using a combination of C and C++ and using a few external libraries (TagLib and Boost). The program will recursively or non-recursively crawl a directory tree and automatically generate a new playlist for any MP3 files found.", 
+		"sourcelink" : "https://github.com/lockan/PLS_Generator.git",
+		"linktext" : "https://github.com/lockan/PLS_Generator.git",
+		"img": "preview_rocket.jpg"
 	},
 	{
 		"id": "id2",
-		"title": "Test title 2",
-		"subtitle": "Test subtitle 2",
-		"description": "Test content 2 test content 2 test content 2 test content 2.", 
-		"img": "preview_plsgen.jpg",
-		"alttext": "alternate text 2"
+		"title": "RocketLauncher - C#",
+		"description": "A C# Windows tasktray application that provides a right-click context menu to quickly launch applications from a set of customized shortcuts. The program configuration is stored and loaded from an XML file..", 
+		"sourcelink" : "https://github.com/lockan/RocketLauncher.git",
+		"linktext" : "https://github.com/lockan/RocketLauncher.git",
+		"img": "preview_plsgen.jpg"
 	},
 	{
-		"id": "id3",
-		"title": "Test title 3",
-		"subtitle": "Test subtitle 3",
-		"description": "Test content 3 test content 3 test content 3 test content 3.", 
-		"img": "preview_rocket.jpg",
-		"alttext": "alternate text 3"
+		"id": "id1",
+		"title": "PocketDialer - Android",
+		"description": "Work in Progress - PocketDialer is a native Android application that does exactly that: it intentionally pocket-dials a random phone number from your contacts list.",
+		"sourcelink" : "#",
+		"linktext" : "Kept in private repository. Please e-mail to request access.",
+		"img": "preview_pocketdialer.jpg"
 	},
 	{
 		"id": "id4",
-		"title": "Test title 4",
-		"subtitle": "Test subtitle 4",
-		"description": "Test content 4 test content 4 test content 4 test content 4.", 
-		"img": "skydiver.jpg",
-		"alttext": "alternate text 4"
+		"title": "Skydiver - Unity3D (prototype)",
+		"description": "A protoype skydiver game built in Unity3D, before I started my education at BCIT. The Art and UI are extremely placeholder programmer art, but the gameplay works as intended. Script written in C# using the Unity3D libraries. Arrow keys are the controls.", 
+		"sourcelink" : "/codesamples/skydiver.html",
+		"linktext" : "Click to Play",
+		"img": "skydiver.jpg"
 	}
 ]

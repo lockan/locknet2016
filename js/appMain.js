@@ -58,7 +58,6 @@ appMain.controller('codeController', function ($scope, $http, $sce) {
 	});
 	
 	$scope.renderbox = function(sample) { 
-		//return $sce.trustAsHtml(samplebox);
 		return '/codesamples/template_codesample.html';
 	};
 	

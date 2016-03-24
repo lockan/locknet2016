@@ -19,10 +19,20 @@ body {
 	display:			inline-block;
 }
 
-#linkbox {
+#linkpanel {
 	position:			relative;			
 	float: 				right;
 	display:			inline-block;
+	margin-right:		5px;
+}
+
+#linkbox {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.linkbutton {
+	height: 32px;
 }
 
 #navmain {
@@ -41,3 +51,8 @@ footer {
 	display:			block;
 	position:			relative;
 }
+
+.gi2{font-size: 2em;}
+.gi3{font-size: 3em;}
+.gi4{font-size: 4em;}
+.gi5{font-size: 5em;}
