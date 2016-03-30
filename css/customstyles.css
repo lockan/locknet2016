@@ -17,13 +17,15 @@ body {
 #siteheading {
 	position: 			relative;
 	display:			inline-block;
+	margin-left:		10px;
+	margin-right: 		10px;
 }
 
 #linkpanel {
 	position:			relative;			
 	float: 				right;
 	display:			inline-block;
-	margin-right:		5px;
+	margin-right:		10px;
 }
 
 #linkbox {
