@@ -19,16 +19,19 @@
 					<h1 class="text-left"> Andrew Lockhart <br/><small> OnlinePortfolio { return this; } </small></h1>
 				</div>
 				
+				<!-- Contact Links Panel -->
 				<div id="linkpanel" class="hidden-xs">
 					<h1 class="btn-group" role="group" style="line-height: 42px">
-					<span class="linkbox"><a href="http://www.github.com/lockan/" role="button" class="btn btn-primary navbar-btn"><img src="img/blacktocat-32.png" class="linkbutton"/></a></span>
-					<span class="linkbox"><a href="http://ca.linkedin.com/in/lockan/" role="button" class="btn btn-primary navbar-btn"><img src="img/In-2CRev-28px-TM.png" class="linkbutton"/></a></span>
+					<span class="linkbox"><a href="http://www.github.com/lockan/" target="new" role="button" class="btn btn-primary navbar-btn"><img src="img/blacktocat-32.png" class="linkbutton"/></a></span>
+					<span class="linkbox"><a href="http://ca.linkedin.com/in/lockan/" target="new" role="button" class="btn btn-primary navbar-btn"><img src="img/In-2CRev-28px-TM.png" class="linkbutton"/></a></span>
 					<span class="linkbox"><a href="#" role="button" class="btn btn-primary navbar-btn"><span class="glyphicon glyphicon-envelope gi2 linkbutton"></span></a></span>
 					</h1>
 				</div>	
+				<!-- END Contact Links Panel -->
 				
-				<nav id="navmain" class="nav navbar navbar-inverse" role="navigation">
-					<div class="nav-header">					
+				<!-- Main navbar -->
+				<nav id="navmain" class="nav navbar-inverse" role="navigation">
+					<div class="nav nav-header">					
 						<div class="container-fluid">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapseme" aria-expanded="false">
 								<span class="icon-bar"></span>
@@ -45,8 +48,10 @@
 						</ul>
 					</div>
 				</nav>
+				<!-- END Main navbar -->
 
 		</header>
+		<!-- END Main Site Header -->
 	
 		<!-- Main Content Pane -->
 		<div id="main">
@@ -54,24 +59,24 @@
 				<div ng-view></div>
 			
 		</div>
+		<!-- END Main Content Pane -->
 	
 	<!-- Page Footer -->
 	<footer class="footer">
-		
-		<p class="text-muted text-center">
+		<h6 class="text-muted text-center">
 			<center>Site design &copy; 2016 A. Lockhart. Powered by Bootstrap &amp;&amp; Angular.js
-		</p>
-		
+		</h6>
 	</footer>
+	<!-- END Page Footer -->
 
 	</div>
 </body>
-
+<!-- Script Imports -->
 <script type="text/javascript" src="./js/jquery/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="./js/angular/angular.js"></script>
 <script type="text/javascript" src="./js/angular/angular-sanitize.js"></script>
 <script type="text/javascript" src="./js/angular/angular-route.js"></script>
 <script type="text/javascript" src="./js/appMain.js"></script>
-
+<!-- END Script Imports -->
 </html>

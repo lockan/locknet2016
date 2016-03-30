@@ -4,6 +4,7 @@ body {
 	-webkit-background-size: 	cover;
 	-moz-background-size: 		cover;
 	background-size:			cover;
+	min-width:					350px;
 }
 
 #mainheader {
@@ -42,11 +43,12 @@ body {
 }
 
 footer {
-    position: fixed;
+	position: fixed;
     bottom: 0;
     width: 100%;
     height: 40px;
 	color:	#eee;
+	background-color: #000;
 }
 
 #main {

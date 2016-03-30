@@ -28,11 +28,7 @@ appMain.config(function($routeProvider, $locationProvider) {
 // MAIN CONTROLLER
 appMain.controller('mainController', function ($scope, $http) {
 
-	$scope.pageheader = "Main";
-	$scope.test = "This is a test";
-	$scope.title = "Sample title";
-	$scope.subtitle = "Subtitle";
-	$scope.description = "This is some content text that I wrote";
+	$scope.pageheader = "Home";
 	
 });
 
@@ -43,7 +39,7 @@ appMain.controller('resumeController', function ($scope) {
 
 // CODE CONTROLLER
 appMain.controller('codeController', function ($scope, $http, $sce) {
-	$scope.pageheader = "Code"
+	$scope.pageheader = "Code Samples"
 	$scope.samples = [];
 		
 	var samplebox;
