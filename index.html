@@ -14,49 +14,49 @@
 <body>
 	<div class="container-fluid">
 		<!-- Main Site Header -->
+		
 		<header id="mainheader">
-				<div id="siteheading">	
-					<h1 class="text-left"> Andrew Lockhart <br/><small> OnlinePortfolio { return this; } </small></h1>
+		
+			<!-- Main navbar -->
+			<nav id="navmain" class="nav navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="container-fluid">
+					<div class="nav navbar-header">
+						<h3>Andrew Lockhart <small> OnlinePortfoliow { return this; }</small></h3>
+						
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnavlinks" aria-expanded="false">
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+						</button>					
+						
+						<button type="button" class="navbar-toggle nav-left" data-toggle="collapse" data-target="#contactlinks" aria-expanded="false">
+							<span class="glyphicon glyphicon-link"></span>
+						</button>
+					</div>
 				</div>
-				
-				<!-- Contact Links Panel -->
-				<div id="linkpanel" class="hidden-xs">
-					<h1 class="btn-group" role="group" style="line-height: 42px">
-					<span class="linkbox"><a href="http://www.github.com/lockan/" target="new" role="button" class="btn btn-primary navbar-btn"><img src="img/blacktocat-32.png" class="linkbutton"/></a></span>
-					<span class="linkbox"><a href="http://ca.linkedin.com/in/lockan/" target="new" role="button" class="btn btn-primary navbar-btn"><img src="img/In-2CRev-28px-TM.png" class="linkbutton"/></a></span>
-					<span class="linkbox"><a href="#" role="button" class="btn btn-primary navbar-btn"><span class="glyphicon glyphicon-envelope gi2 linkbutton"></span></a></span>
-					</h1>
-				</div>	
-				<!-- END Contact Links Panel -->
-				
-				<!-- Main navbar -->
-				<nav id="navmain" class="nav navbar-inverse" role="navigation">
-					<div class="nav nav-header">					
-						<div class="container-fluid">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapseme" aria-expanded="false">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-					</div>
-					<div id="collapseme" class="collapse navbar-collapse">
-						<ul class="nav nav-navbar nav-justified">
-							<li><a href="/"> GoHome() </a></li>
-							<li><a href="/code"> ViewSampleCode() </a></li>
-							<li><a href="/resume"> ShowResume() </a></li>
-						</ul>
-					</div>
-				</nav>
-				<!-- END Main navbar -->
+				<div id="mainnavlinks" class="collapse navbar-collapse">
+					<ul class="nav nav-navbar nav-left">
+						<li><a href="/"> GoHome() </a></li>
+						<li><a href="/code"> ViewSampleCode() </a></li>
+						<li><a href="/resume"> ShowResume() </a></li>
+					</ul>
+				</div>
+				<div id="contactlinks" class="collapse navbar-collapse">
+				<ul class="nav nav-navbar nav-right">
+					<li><a href="http://www.github.com/lockan/" target="new" role="button" class="btn btn-primary navbar-btn"><img src="img/blacktocat-32.png" class="linkbutton"/></a></li>
+					<li><a href="http://ca.linkedin.com/in/lockan/" target="new" role="button" class="btn btn-primary navbar-btn"><img src="img/In-2CRev-28px-TM.png" class="linkbutton"/></a></li>
+					<li><a href="#" role="button" class="btn btn-primary navbar-btn"><span class="glyphicon glyphicon-envelope gi2 linkbutton"></span></a></li>
+				</ul>
+			</div>
+			</nav>
+			<!-- END Main navbar -->
 
 		</header>
+		
 		<!-- END Main Site Header -->
 	
 		<!-- Main Content Pane -->
 		<div id="main">
 		
-				<div ng-view></div>
+			<div ng-view></div>
 			
 		</div>
 		<!-- END Main Content Pane -->
