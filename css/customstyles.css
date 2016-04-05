@@ -42,6 +42,33 @@ body {
 	
 }
 
+.navbar-inverse .dropdown-menu
+{
+	background-color: 	#000;
+}
+
+.navbar-inverse .open
+{
+	background-color: 	#000;
+}
+
+.navbar-inverse a:link {
+	color: #ddd;
+}
+
+.navbar-inverse a:hover {
+	color: #fff;
+}
+
+.navbar-inverse a:active {
+	color: #fff;
+}
+
+.navbar-inverse a:visited {
+	color: #ddd;
+}
+
+
 footer {
 	position: fixed;
     bottom: 0;

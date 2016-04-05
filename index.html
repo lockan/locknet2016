@@ -12,46 +12,51 @@
 </head>
 	
 <body>
-	<div class="container-fluid">
-		<!-- Main Site Header -->
+	<!-- Main Site Header -->
+	
+	<header id="mainheader">
 		
-		<header id="mainheader">
-		
-			<!-- Main navbar -->
-			<nav id="navmain" class="nav navbar-inverse navbar-fixed-top" role="navigation">
-				<div class="container-fluid">
-					<div class="nav navbar-header">
-						<h3>Andrew Lockhart <small> OnlinePortfoliow { return this; }</small></h3>
-						
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnavlinks" aria-expanded="false">
-							<span class="glyphicon glyphicon-menu-hamburger"></span>
-						</button>					
-						
-						<button type="button" class="navbar-toggle nav-left" data-toggle="collapse" data-target="#contactlinks" aria-expanded="false">
-							<span class="glyphicon glyphicon-link"></span>
-						</button>
-					</div>
+		<!-- Main navbar -->
+		<nav id="navmain" class="nav navbar-inverse navbar-static-top" role="navigation">
+			
+			<div class="container-fluid">
+				
+				<div class="nav navbar-header">
+					<h3>Andrew Lockhart <small> OnlinePortfoliow { return this; }</small></h3>
 				</div>
-				<div id="mainnavlinks" class="collapse navbar-collapse">
-					<ul class="nav nav-navbar nav-left">
-						<li><a href="/"> GoHome() </a></li>
-						<li><a href="/code"> ViewSampleCode() </a></li>
-						<li><a href="/resume"> ShowResume() </a></li>
-					</ul>
-				</div>
-				<div id="contactlinks" class="collapse navbar-collapse">
-				<ul class="nav nav-navbar nav-right">
-					<li><a href="http://www.github.com/lockan/" target="new" role="button" class="btn btn-primary navbar-btn"><img src="img/blacktocat-32.png" class="linkbutton"/></a></li>
-					<li><a href="http://ca.linkedin.com/in/lockan/" target="new" role="button" class="btn btn-primary navbar-btn"><img src="img/In-2CRev-28px-TM.png" class="linkbutton"/></a></li>
-					<li><a href="#" role="button" class="btn btn-primary navbar-btn"><span class="glyphicon glyphicon-envelope gi2 linkbutton"></span></a></li>
-				</ul>
-			</div>
-			</nav>
-			<!-- END Main navbar -->
+					
+				<ul class="nav navbar-nav navbar-inverse">
+					
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="buton">
+					<span class="glyphicon glyphicon-menu-hamburger"></span> Nav</a>
+						<ul class="dropdown-menu">
+							<li><a href="/"> GoHome() </a></li>
+							<li><a href="/code"> ViewSampleCode() </a></li>
+							<li><a href="/resume"> ShowResume() </a></li>
+						</ul>
+					</li>
+					
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="buton">
+					<span class="glyphicon glyphicon-link"></span> Links</a>
+						<ul class="dropdown-menu">
+							<li><a href="http://www.github.com/lockan/" target="new"><img src="img/blacktocat-32.png"/></a></li>
+							<li><a href="http://ca.linkedin.com/in/lockan/" target="new"><img src="img/In-2CRev-28px-TM.png"/></a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-envelope gi2"></span></a></li>
+						</ul>
+					</li>
+				
+				</ul>							
 
-		</header>
-		
-		<!-- END Main Site Header -->
+			</div>
+			
+		</nav>
+		<!-- END Main navbar -->
+
+	</header>
+	
+	<!-- END Main Site Header -->
+	
+	<div class="container-fluid">
 	
 		<!-- Main Content Pane -->
 		<div id="main">
