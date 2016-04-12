@@ -1,5 +1,5 @@
 body {
-	background:					url('../img/typinghands.jpg') no-repeat center center;
+	background:					url('../img/typinghands.jpg') no-repeat center center fixed;
 	min-height:					100%;
 	-webkit-background-size: 	cover;
 	-moz-background-size: 		cover;
@@ -35,7 +35,7 @@ body {
 }
 
 .linkbutton {
-	height: 32px;
+	margin-right: 10px;
 }
 
 #navmain {
