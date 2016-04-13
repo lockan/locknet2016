@@ -26,9 +26,14 @@ appMain.config(function($routeProvider, $locationProvider) {
 });
 
 // MAIN CONTROLLER
-appMain.controller('mainController', function ($scope, $http) {
-
+appMain.controller('mainController', function ($scope, $http, $sce) {
 	$scope.pageheader = "Home";
+	$scope.contentheader = "Welcome";
+	
+	$http.get('/main/main_content.html').then(function(response) {
+		$scope.pagecontent = $sce.trustAsHtml(response.data);
+	});
+	
 	
 });
 
@@ -42,12 +47,7 @@ appMain.controller('codeController', function ($scope, $http, $sce) {
 	$scope.pageheader = "Code Samples"
 	$scope.samples = [];
 		
-	var samplebox;
 	var sampledata = null;
-	
-	$http.get('/codesamples/template_codesample.html').then(function(response) { 
-		samplebox = response.data;	
-	});
 
 	$http.get('/codesamples/codesampledata.json').then(function(response) { 
 		$scope.samples = response.data;
