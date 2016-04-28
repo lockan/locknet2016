@@ -22,13 +22,5 @@
 		"sourcelink" : "#",
 		"linktext" : "Kept in private repository. Please e-mail to request access.",
 		"img": "preview_pocketdialer.jpg"
-	},
-	{
-		"id": "id4",
-		"title": "Skydiver - Unity3D (prototype)",
-		"description": "A protoype skydiver game built in Unity3D, before I started my education at BCIT. The Art and UI are extremely placeholder programmer art, but the gameplay works as intended. Script written in C# using the Unity3D libraries. Arrow keys are the controls.", 
-		"sourcelink" : "/codesamples/skydiver.html",
-		"linktext" : "Click to Play",
-		"img": "skydiver.jpg"
 	}
 ]

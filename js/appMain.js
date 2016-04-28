@@ -34,7 +34,6 @@ appMain.controller('mainController', function ($scope, $http, $sce) {
 		$scope.pagecontent = $sce.trustAsHtml(response.data);
 	});
 	
-	
 });
 
 // RESUME CONTROLLER

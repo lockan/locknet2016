@@ -68,7 +68,6 @@ body {
 	color: #ddd;
 }
 
-
 footer {
 	position: fixed;
     bottom: 0;
@@ -87,3 +86,29 @@ footer {
 .gi3{font-size: 3em;}
 .gi4{font-size: 4em;}
 .gi5{font-size: 5em;}
+
+.page-header {
+	color: 			#0f0;
+	font-family: 	Consolas;
+	background-color:rgba(0,0,0,0.2);
+	padding-left:	10px;
+}
+
+.media-heading,
+.panel-title
+{
+	color:			#00a900 	!important;
+	font-weight:	bold		!important;
+}
+
+h4 {
+	color:			#00a900;
+}
+
+#headshot {
+	border: 3px solid #000;
+}
+
+.glyphicon {
+	color: 	#0d0;
+}
