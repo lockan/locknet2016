@@ -106,9 +106,24 @@ h4 {
 }
 
 #headshot {
-	border: 3px solid #000;
+	border: 		3px solid #000;
+}
+
+#headshotwrapper {
+	display:		inline-block;
+	position:		relative;
+	float:			left;
+	padding-right:	10px;
 }
 
 .glyphicon {
 	color: 	#0d0;
+}
+
+.secsubtitle {
+	font-weight: 	bold;
+}
+
+.date {
+	font-style: 	italic;
 }
